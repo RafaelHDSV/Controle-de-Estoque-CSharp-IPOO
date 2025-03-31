@@ -2,7 +2,6 @@
 
 ![C# language](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![Visual Studio 2022](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
-
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 
@@ -11,17 +10,17 @@
 </p>
 
 <p align="center">
-    <a href="#about">About |</a> 
-    <a href="#started">Getting Started</a> 
-    <a href="#routes">| App Routes</a> 
-    <a href="#images">| Images</a> 
+    <a href="#about">Sobre |</a> 
+    <a href="#started">Como inicializar</a> 
+    <a href="#routes">| Rotas da aplicação</a> 
+    <a href="#images">| Imagens</a> 
 </p>
 
-<h2 id="about">📌 About</h2>
+<h2 id="about">📌 Sobre</h2>
 
 {Descrição do projeto}
 
-<h2 id="started">🚀 Getting started</h2>
+<h2 id="started">🚀 Como inicializar</h2>
 
 {Introdução breve do que será necessário para inicializar a aplicação}
 
@@ -39,7 +38,7 @@ cd {Seu-Repositório}
 yarn start
 ```
 
-<h2 id="routes">📍 Application Routes</h2>
+<h2 id="routes">📍 Rotas da aplicação</h2>
 
 {Introdução breve das rotas da sua aplicação}
 ​
@@ -73,7 +72,7 @@ yarn start
 
 <img src="./public/images/user.png"/> -->
 
-<h2 id="images">📷 Images</h2>
+<h2 id="images">📷 Imagens</h2>
 
 ![image](https://github.com/user-attachments/assets/c8de49e0-82cb-4c25-9db6-da265b97bfc4)
 ![image](https://github.com/user-attachments/assets/77b37916-c468-4cf7-b359-9f3642558d23)
