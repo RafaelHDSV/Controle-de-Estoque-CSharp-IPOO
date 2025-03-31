@@ -16,7 +16,7 @@
 
 <h2 id="about">📌 Sobre</h2>
 
-{Descrição do projeto}
+Esse projeto é um controle de estoque utilizando `C#` e `Windows Form`. Não existe nenhum banco de dados vinculado a aplicação, então os dados inseridos no sistema serão perdidos quando o sistema for fechado / reiniciado. É possível adicionar produtos, consultar todos os produtos cadastrados e controlar os produtos já cadastrados, ou seja, é possível adicionar ou remover uma quantidade definida em um produto já cadastrado anteriormente. 
 
 <h2 id="started">🚀 Como inicializar</h2>
 
@@ -91,5 +91,3 @@ Nessa tela existe dois formulários, um para entradas e outro para saídas. Nele
 ### arquivo: <kbd>frmControle</kbd>
 
 ![image](https://github.com/user-attachments/assets/c8f3a088-a82b-49e0-ae89-f1a28f41bed9)
-
-<hr/>
