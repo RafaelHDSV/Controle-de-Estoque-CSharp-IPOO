@@ -1,93 +1,100 @@
-# Controle-de-Estoque-CSharp-IPOO
+# 📦 Controle de Estoque em C# (Windows Forms)
 
 ![C# language](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![Visual Studio 2022](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
-
-![image](https://github.com/user-attachments/assets/65e62124-89b2-4ef5-ac33-e629db5cfa2f)
+![GitHub last commit](https://img.shields.io/github/last-commit/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 
 <p align="center">
-    <a href="#about">Sobre |</a> 
-    <a href="#started">Como inicializar</a> 
-    <a href="#routes">| Rotas da aplicação</a> 
-    <a href="#images">| Imagens</a> 
+  <img src="https://github.com/user-attachments/assets/65e62124-89b2-4ef5-ac33-e629db5cfa2f" alt="Tela Principal do Sistema" width="600">
 </p>
 
-<h2 id="about">📌 Sobre</h2>
+<p align="center">
+    <a href="#about">📌 Sobre</a> • 
+    <a href="#features">✨ Funcionalidades</a> • 
+    <a href="#started">🚀 Como Executar</a> • 
+    <a href="#structure">🏗️ Estrutura do Projeto</a> • 
+    <a href="#screenshots">📷 Screenshots</a>
+</p>
 
-Esse projeto é um controle de estoque utilizando `C#` e `Windows Form`. Não existe nenhum banco de dados vinculado a aplicação, então os dados inseridos no sistema serão perdidos quando o sistema for fechado / reiniciado. É possível adicionar produtos, consultar todos os produtos cadastrados e controlar os produtos já cadastrados, ou seja, é possível adicionar ou remover uma quantidade definida em um produto já cadastrado anteriormente. 
+<h2 id="about">📌 Sobre o Projeto</h2>
 
-<h2 id="started">🚀 Como inicializar</h2>
+Sistema de controle de estoque desenvolvido em C# com Windows Forms como parte de estudos em Programação Orientada a Objetos. 
 
-Para inicializar o projeto, é necessário clonar o repositório para ter acesso a todo o código e interfaces. Feito isso é necessário abrir o `Visual Studio 2022` e rodar a aplicação.
+🔹 **Principais características:**
+- Cadastro de produtos com nome, tipo, quantidade e fornecedor
+- Controle de entrada e saída de itens
+- Consulta completa do estoque
+- Interface MDI (Multiple Document Interface)
+- Validações de dados integradas
 
-<h3>Clonando</h3>
+⚠️ **Observação:** O sistema não utiliza banco de dados permanente - todas as informações são armazenadas apenas em memória e serão perdidas ao fechar a aplicação.
 
+<h2 id="features">✨ Funcionalidades</h2>
+
+- **Cadastro de Produtos**
+  - Formulário com campos obrigatórios
+  - Seleção de quantidade pré-definida
+  - Validação de dados
+
+- **Controle de Estoque**
+  - Entrada de mercadorias
+  - Saída de mercadorias
+  - Impedimento de saída quando estoque insuficiente
+
+- **Consulta Completa**
+  - Visualização em tabela
+  - Atualização automática
+  - Exibição de todos os campos cadastrais
+
+<h2 id="started">🚀 Como Executar o Projeto</h2>
+
+### Pré-requisitos
+- Visual Studio 2022
+- .NET Framework 4.7.2 ou superior
+
+### Passo a Passo
+
+1. Clone o repositório:
 ```bash
 git clone https://github.com/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO.git
 ```
 
-<h3>Iniciando</h3>
-
+2.  Acesse a pasta do projeto:
 ```bash
 cd Controle-de-Estoque-CSharp-IPOO
 ```
 
-<h2 id="routes">📍 Rotas da aplicação</h2>
+3.  Abra o arquivo .sln no Visual Studio 2022
 
-Existem 4 principais rotas no sistema:
-​
-| arquivo | descrição  
+4.  Compile e execute o projeto (F5)
+
+<h2 id="structure">🏗️ Estrutura do Projeto</h2>
+
+| Formulário | Descrição
 |----------------------|-----------------------------------------------------
-| <kbd>frmPrincipal</kbd> | Tela inicial (MDI Container)
-| <kbd>frmConsulta</kbd> | Tela para consultar os produtos
-| <kbd>frmCadastro</kbd> | Tela para cadastrar os produtos
-| <kbd>frmControle</kbd> | Tela para controlar os produtos (adicionar e remover)
+| frmPrincipal | Tela principal (MDI Container) com menu de acesso a todas as funcionalidades
+| frmCadastro | Formulário para cadastro de novos produtos no sistema
+| frmControle | Interface para gerenciar entradas e saídas do estoque
+| frmConsulta | Tabela de visualização de todos os produtos cadastrados
 
-<!-- | <kbd>/movie</kbd> | page to get more detailed information about the selected film -->
-<!-- | <kbd>/user</kbd> | page to select the user icon -->
-<!-- | <kbd>/_error_</kbd> | page when the route does not exist or is not found -->
+<h2 id="screenshots">📷 Screenshots</h2>
 
-### <kbd>frmPrincipal</kbd>
-Nessa tela existe um MdiContainer com um menuString com 3 opções (Cadastro de Produto, Controle de Produto e Consulta de Produto). Pelo fato de ser um MdiContainer as telas existentes são abertas dentro desse formulário principal.
+Tela Principal (MDI Container)
+![image](https://github.com/user-attachments/assets/aca14c72-377e-47f7-ba54-8c43405fc1ef)
 
-### <kbd>frmConsulta</kbd>
-Nessa tela existe uma tabela simples com todas os produtos já cadastrados, com as colunas: id, name, type, quantity e supplier. Essa tela não é muito complexo, mas é importante ressaltar que existe uma lógica de reenderização da tabela, para que quando seja cadastrado e / ou atualizado um produto, a tabela se atualize automaticamente.
+Consulta de Produtos
+![image](https://github.com/user-attachments/assets/917073ae-ba17-40fc-9d39-23240bdd8ad6)
 
-### <kbd>frmCadastro</kbd>
-Nessa tela existe um formulário para que seja possível o cadastro de um produto, com os inputs: nome, tipo, quantidade e fornecedor. O input de quantidade é um select com opções já predefinidas anteriormente, mas pode ser alterado a qualquer momento pelo código. Clicando no botão de cadastrar, ocorre o cadastro do produto, isso se não existir nenhuma incongruência nos valores.
+Cadastro de Produtos
+![image](https://github.com/user-attachments/assets/207ac9eb-92d1-4e53-931a-47e09da6bac3)
 
-### <kbd>frmControle</kbd>
-Nessa tela existe dois formulários, um para entradas e outro para saídas. Neles existem 3 inputs: id, nome e quantidade. Com isso é possível adicionar ou remover uma quantidade determinada de um produto já cadastrado e para acessar esse produto pode ser pesquisado por id ou pelo nome do produto. Também existe uma lógica para que não haja nenhum valor incorreto ou algum erro nessa tela, como por exemplo decrementar um produto com a `quantidade <= 0`.
+Opções de quantidade disponíveis:
+![image](https://github.com/user-attachments/assets/8b887a92-91b9-4546-aa2a-3f148a63c8cd)
 
-<h2 id="images">📷 Imagens</h2>
+Controle de Estoque
+![image](https://github.com/user-attachments/assets/fa815907-1436-4fa8-bcf8-7848a27561b2)
 
-### arquivo: <kbd>frmPrincipal</kbd>
-
-![image](https://github.com/user-attachments/assets/c8de49e0-82cb-4c25-9db6-da265b97bfc4)
-![image](https://github.com/user-attachments/assets/65e62124-89b2-4ef5-ac33-e629db5cfa2f)
-
-<hr/>
-
-### arquivo: <kbd>frmConsulta</kbd>
-
-![image](https://github.com/user-attachments/assets/664ff044-b47f-4287-9ebf-fa5320e0df15)
-
-<hr/>
-
-### arquivo: <kbd>frmCadastro</kbd>
-
-![image](https://github.com/user-attachments/assets/77b37916-c468-4cf7-b359-9f3642558d23)
-
-<hr/>
-
-### arquivo: <kbd>frmCadastro (Opções do Select)</kbd>
-
-![image](https://github.com/user-attachments/assets/161d0242-17da-41fb-bcb4-8de2ef1413f9)
-
-<hr/>
-
-### arquivo: <kbd>frmControle</kbd>
-
-![image](https://github.com/user-attachments/assets/c8f3a088-a82b-49e0-ae89-f1a28f41bed9)
+<p align="center"> Desenvolvido com ❤️ por <a href="https://github.com/RafaelHDSV">RafaelHDSV</a> </p>
