@@ -16,5 +16,15 @@ namespace Controle_de_Estoque
         {
             InitializeComponent();
         }
+
+        private void frmConsulta_Load(object sender, EventArgs e)
+        {
+            var produtos = frmPrincipal.Produtos;
+
+            if (produtos != null)
+            {
+                dgvProdutos.DataSource = produtos;
+            }
+        }
     }
 }
