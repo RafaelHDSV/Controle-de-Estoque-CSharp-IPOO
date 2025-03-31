@@ -5,9 +5,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO?style=for-the-badge)
 
-<p align="center">
-    <img src="./public/images/main.gif" alt="Gif Example">
-</p>
+![image](https://github.com/user-attachments/assets/65e62124-89b2-4ef5-ac33-e629db5cfa2f)
 
 <p align="center">
     <a href="#about">Sobre |</a> 
@@ -24,18 +22,16 @@
 
 {Introdução breve do que será necessário para inicializar a aplicação}
 
-<h3>Cloning</h3>
+<h3>Clonando</h3>
 
 ```bash
-git clone https://github.com/RafaelHDSV/{Seu-Repositório}.git
-yarn install
+git clone https://github.com/RafaelHDSV/Controle-de-Estoque-CSharp-IPOO.git
 ```
 
-<h3>Starting</h3>
+<h3>Iniciando</h3>
 
 ```bash
-cd {Seu-Repositório}
-yarn start
+cd Controle-de-Estoque-CSharp-IPOO
 ```
 
 <h2 id="routes">📍 Rotas da aplicação</h2>
