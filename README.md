@@ -20,7 +20,7 @@
 
 <h2 id="started">🚀 Como inicializar</h2>
 
-{Introdução breve do que será necessário para inicializar a aplicação}
+Para inicializar o projeto, é necessário clonar o repositório para ter acesso a todo o código e interfaces. Feito isso é necessário abrir o `Visual Studio 2022` e rodar a aplicação.
 
 <h3>Clonando</h3>
 
@@ -36,43 +36,60 @@ cd Controle-de-Estoque-CSharp-IPOO
 
 <h2 id="routes">📍 Rotas da aplicação</h2>
 
-{Introdução breve das rotas da sua aplicação}
+Existem 4 principais rotas no sistema:
 ​
-| route | description  
+| arquivo | descrição  
 |----------------------|-----------------------------------------------------
-| <kbd>/</kbd> | home page
+| <kbd>frmPrincipal</kbd> | Tela inicial (MDI Container)
+| <kbd>frmConsulta</kbd> | Tela para consultar os produtos
+| <kbd>frmCadastro</kbd> | Tela para cadastrar os produtos
+| <kbd>frmControle</kbd> | Tela para controlar os produtos (adicionar e remover)
 
 <!-- | <kbd>/movie</kbd> | page to get more detailed information about the selected film -->
 <!-- | <kbd>/user</kbd> | page to select the user icon -->
 <!-- | <kbd>/_error_</kbd> | page when the route does not exist or is not found -->
 
-<!-- <hr/>
+### <kbd>frmPrincipal</kbd>
+Nessa tela existe um MdiContainer com um menuString com 3 opções (Cadastro de Produto, Controle de Produto e Consulta de Produto). Pelo fato de ser um MdiContainer as telas existentes são abertas dentro desse formulário principal.
 
-### route: <kbd>/</kbd>
+### <kbd>frmConsulta</kbd>
+Nessa tela existe uma tabela simples com todas os produtos já cadastrados, com as colunas: id, name, type, quantity e supplier. Essa tela não é muito complexo, mas é importante ressaltar que existe uma lógica de reenderização da tabela, para que quando seja cadastrado e / ou atualizado um produto, a tabela se atualize automaticamente.
 
-<img src="./public/images/root.png"/>
+### <kbd>frmCadastro</kbd>
+Nessa tela existe um formulário para que seja possível o cadastro de um produto, com os inputs: nome, tipo, quantidade e fornecedor. O input de quantidade é um select com opções já predefinidas anteriormente, mas pode ser alterado a qualquer momento pelo código. Clicando no botão de cadastrar, ocorre o cadastro do produto, isso se não existir nenhuma incongruência nos valores.
 
-<hr/>
-
-### route: <kbd>/movie</kbd>
-
--    movie
-     <img src="./public/images/movie.png"/>
-
--    tv
-     <img src="./public/images/tv.png"/>
-
-<hr/>
-
-### route: <kbd>/user</kbd>
-
-<img src="./public/images/user.png"/> -->
+### <kbd>frmControle</kbd>
+Nessa tela existe dois formulários, um para entradas e outro para saídas. Neles existem 3 inputs: id, nome e quantidade. Com isso é possível adicionar ou remover uma quantidade determinada de um produto já cadastrado e para acessar esse produto pode ser pesquisado por id ou pelo nome do produto. Também existe uma lógica para que não haja nenhum valor incorreto ou algum erro nessa tela, como por exemplo decrementar um produto com a `quantidade <= 0`.
 
 <h2 id="images">📷 Imagens</h2>
 
+### arquivo: <kbd>frmPrincipal</kbd>
+
 ![image](https://github.com/user-attachments/assets/c8de49e0-82cb-4c25-9db6-da265b97bfc4)
-![image](https://github.com/user-attachments/assets/77b37916-c468-4cf7-b359-9f3642558d23)
+![image](https://github.com/user-attachments/assets/65e62124-89b2-4ef5-ac33-e629db5cfa2f)
+
+<hr/>
+
+### arquivo: <kbd>frmConsulta</kbd>
+
 ![image](https://github.com/user-attachments/assets/664ff044-b47f-4287-9ebf-fa5320e0df15)
-![image](https://github.com/user-attachments/assets/c8f3a088-a82b-49e0-ae89-f1a28f41bed9)
-![image](https://github.com/user-attachments/assets/3faa380e-eb6d-4814-a877-08677bf26b54)
+
+<hr/>
+
+### arquivo: <kbd>frmCadastro</kbd>
+
+![image](https://github.com/user-attachments/assets/77b37916-c468-4cf7-b359-9f3642558d23)
+
+<hr/>
+
+### arquivo: <kbd>frmCadastro (Opções do Select)</kbd>
+
 ![image](https://github.com/user-attachments/assets/161d0242-17da-41fb-bcb4-8de2ef1413f9)
+
+<hr/>
+
+### arquivo: <kbd>frmControle</kbd>
+
+![image](https://github.com/user-attachments/assets/c8f3a088-a82b-49e0-ae89-f1a28f41bed9)
+
+<hr/>
